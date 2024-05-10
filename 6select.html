@@ -47,20 +47,50 @@
 </head>
 <body>
     <div class="container">
-        <h2>Enrollment Form - Page 1</h2>
+        <h2>Enrollment Form</h2>
         <form action="#" method="post" id="formPage1">
             <fieldset>
-             <label for="course">Select Code:</label>
-            <select id="course" name="course" required>
+ <legend>TEAM CODE</legend>
+<form id="myForm">
+ 
+             <label for="name">Select Code:</label>
+ <select id="name" name="name" required>
                 <option value="">Select code</option>
-                <option value="course1">Paras18</option>
-                <option value="course2">Devika03</option>
-                <option value="course3">Jiskaran25</option>
+                <option value="name1">Paras18</option>
+                <option value="name2">Devika03</option>
+                <option value="name3">Jiskaran25</option>
             </select>
         </fieldset>
- <button> <a href="7thanks.html"> Next
-</a> </button>
+  <button type="button" onclick="validateForm()">Submit</button>
         </form>
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // Check if all required fields are filled
+  if (name !== "" && email !== "" && message !== "") {
+    window.location.href = 'thanksyou.html'; // Change 'next_page.html' to the URL of the next page
+  } else {
+    alert("Please fill out all required fields.");
+  }
+}
+</script>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+
+  // Check if all required fields are filled
+  if (name !== "") {
+    window.location.href = 'file:///C:/Users/User/Desktop/HTML/thanksyou.html'; // 
+  } else {
+    alert("Please fill out all required fields.");
+  }
+}
+
+</script>
     </div>
 </body>
 </html>

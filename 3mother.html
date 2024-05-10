@@ -50,22 +50,40 @@
         <h2>Enrollment Form </h2>
         <form action="#" method="post" id="formPage1">
             <fieldset>
-                <legend>Mother name</legend>
-                
-                <label for="Mother name ">Mother name:</label>
-                <input type="text" id="Mother name" name="Mother name" required>
-                   </fieldset>
-            <a href="4phone.html"> <button> Next
-</a> </button>
-    </div>
-        
-    <script>
-        function j() {
-            // Validate form fields if needed
-            // Navigate to the next page
-            window.location.href = "phone.html";
-        }
-    </script>
+                <legend>MOTHER NAME</legend>
+<form id="myForm">
+  <label for="Mother name">Mother name:</label>
+  <input type="text" id="name" required><br><br>
+ <button type="button" onclick="validateForm()">Submit</button>
+</form>
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var message = document.getElementById("message").value;
+
+  // Check if all required fields are filled
+  if (name !== "" && email !== "" && message !== "") {
+    window.location.href = '4phone.html'; // Change 'next_page.html' to the URL of the next page
+  } else {
+    alert("Please fill out all required fields.");
+  }
+}
+</script>
+
+<script>
+function validateForm() {
+  var name = document.getElementById("name").value;
+
+  // Check if all required fields are filled
+  if (name !== "") {
+    window.location.href = 'file:///C:/Users/User/Desktop/HTML/4phone.html'; // 
+  } else {
+    alert("Please fill out all required fields.");
+  }
+}
+
+</script>
+
 </body>
 </html>
-                

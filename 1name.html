@@ -50,9 +50,9 @@
         <h2>Enrollment Form </h2>
         <form action="#" method="post" id="formPage1">
             <fieldset>
-                <legend>AGE</legend>
+                <legend>Name</legend>
 <form id="myForm">
-  <label for="Age">Age:</label>
+  <label for="name">Name:</label>
   <input type="text" id="name" required><br><br>
  <button type="button" onclick="validateForm()">Submit</button>
 </form>
@@ -64,7 +64,7 @@ function validateForm() {
 
   // Check if all required fields are filled
   if (name !== "" && email !== "" && message !== "") {
-    window.location.href = '3mother.html'; // Change 'next_page.html' to the URL of the next page
+    window.location.href = '2age.html';//
   } else {
     alert("Please fill out all required fields.");
   }
@@ -76,9 +76,9 @@ function validateForm() {
   var name = document.getElementById("name").value;
 
   // Check if all required fields are filled
-  if (name !== "") {
-    window.location.href = 'file:///C:/Users/User/Desktop/HTML/3mother.html'; // 
-  } else {
+   {
+    window.location.href = 'file:///C:/Users/User/Desktop/HTML/2age.html'; // 
+  }  {
     alert("Please fill out all required fields.");
   }
 }
